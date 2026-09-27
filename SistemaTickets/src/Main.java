@@ -120,20 +120,13 @@ public class Main {
                     if (frente != null) {
                         System.out.println(frente);
                     }
-                    break;
-                case 2:
-                    resolverTicket();
-                    break;
-                case 3:
-                    ticketsPendientes.mostrarCola();
-                    break;
-                case 4:
-                    ticketsResueltos.mostrarLista();
-                    break;
-                case 0:
-                    break;
-                default:
-                    System.out.println("Opcion invalida.");
+                }
+                case 2 -> resolverTicket();
+                case 3 -> ticketsPendientes.mostrarCola();
+                case 4 -> ticketsResueltos.mostrarLista();
+                case 0 -> {
+                }
+                default -> System.out.println("Opcion invalida.");
             }
         } while (opcion != 0);
     }
