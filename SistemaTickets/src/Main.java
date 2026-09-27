@@ -1,4 +1,3 @@
-
 import java.time.LocalDate;
 import java.util.Scanner;
 
@@ -116,7 +115,7 @@ public class Main {
             opcion = leerNumero();
 
             switch (opcion) {
-                case 1:
+                case 1 -> {
                     Ticket frente = ticketsPendientes.verFrente();
                     if (frente != null) {
                         System.out.println(frente);
